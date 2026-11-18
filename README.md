@@ -2,6 +2,8 @@
 
 A visual dissertation: Md Sadiul Alam Chyon’s thesis on sand and gravel extraction, river response and livelihoods in northern Bangladesh, told as nine short chapters in three acts.
 
+**Live site:** https://sadiulchyon.github.io/visual-dissertation/
+
 ## Open locally
 
 Open `index.html` directly in a browser. All narrative, figure, source and interaction data are local; the site makes no third-party requests and requires no build or installed packages.
@@ -41,7 +43,7 @@ Deep links use hashes and work from a local file and on GitHub Pages project sit
 
 ### What changed from the earlier version
 
-The earlier site offered four parallel modes (a six-stop field story, eight questions, nine chapters, figures). The same material is now arranged on the thesis’s own nine chapters: the field photographs and guesses open the chapters, the question visuals sit inside them, and the figure library stays as a separate view. Low-contrast text in the charts was darkened and the charts were enlarged. The earlier code is kept beside this folder in `dashboard-previous/` and can be opened the same way.
+The earlier site offered four parallel modes (a six-stop field story, eight questions, nine chapters, figures). The same material is now arranged on the thesis’s own nine chapters: the field photographs and guesses open the chapters, the question visuals sit inside them, and the figure library stays as a separate view. Low-contrast text in the charts was darkened and the charts were enlarged. The earlier code is not part of this repository.
 
 ## Source and provenance
 
@@ -65,16 +67,13 @@ Original images are in `assets/originals/`; optimized reading versions are in `a
 
 Edit `media.js`. Three named slots sit under the visual of their chapter: `lubha` (Chapter 5), `someshwari` (Chapter 6) and `governance` (Chapter 8). Empty slots render no placeholder. Supply a relative video path, a poster, an English WebVTT caption file, a title and a source caption. The player uses controls and never autoplays. Add files only when ready; the example in `media.js` shows the shape.
 
-## Publish to GitHub Pages later
+## Publishing
 
-No repository was created and nothing was uploaded or deployed in this stage.
+The site is published with GitHub Pages from this repository, at https://sadiulchyon.github.io/visual-dissertation/.
 
-1. Create or select the intended GitHub repository and place this folder’s contents at its root.
-2. Set the default branch to `main`, or adjust `.github/workflows/pages.yml`.
-3. In the repository’s Pages settings, select **GitHub Actions** as the build source.
-4. Push the completed site to `main` or run the deployment workflow manually.
+Every push to `main` runs `.github/workflows/pages.yml`, which runs `npm run check` and then deploys the folder as a static Pages artifact. The repository’s Pages source is set to **GitHub Actions**. To publish a change, commit it and push to `main`; the workflow can also be run by hand from the Actions tab.
 
-The included workflow verifies the site and uploads a static Pages artifact. All asset paths are relative; there are no framework builds, API keys, analytics, accounts or hosting-specific services.
+All asset paths are relative; there are no framework builds, API keys, analytics, accounts or hosting-specific services.
 
 ## Validation of this version
 
