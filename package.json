@@ -1,0 +1,14 @@
+{
+  "name": "riverbed-to-livelihood",
+  "version": "4.0.0",
+  "private": true,
+  "description": "A visual dissertation in nine chapters: river mining, impacts and livelihoods in northern Bangladesh.",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,42 @@
+window.FIELD_GUIDE = {
+  photos: {
+    pools: {figure:'5.11', panel:'a', box:[32,67,667,633], alt:'An aerial view of water-filled excavation pits on the Lubha floodplain.', place:'Lubhachorra, Lubha River', date:'January 2023'},
+    loading: {figure:'1.1', panel:'c', box:[12,719,720,574], alt:'Workers shovel sand into wooden boats in shallow water on the Sari River.', place:'Lalakhal, Sari River'},
+    fan: {figure:'4.12', panel:'b', box:[772,60,713,495], alt:'Boats cluster around hand-dug pits across the sandy Jadukata fan.', place:'Laurergarh, Jadukata River', date:'10 January 2023'},
+    dredgers: {figure:'6.4', panel:'c', box:[25,907,424,272], alt:'Pipes and dredgers spread across a sand bar beside the Someshwari’s low-flow channel.', place:'Someshwari River', date:'January 2024'},
+    cargo: {figure:'1.3', panel:'c', box:[900,705,590,549], alt:'A wooden boat loaded with sand travels along the river near Sharighat.', place:'Sharighat, Sylhet'},
+    towers: {figure:'4.12', panel:'f', box:[772,1204,713,474], alt:'Dredger floats, sieving towers and water-filled pits occupy a bar on the Someshwari.', place:'Durgapur, Someshwari River', date:'26 January 2023'},
+    carrier: {figure:'1.3', panel:'b', box:[900,52,590,575], alt:'A worker carries a basket of sand up the bank to a roadside sales yard.', place:'Sharighat, Sylhet'},
+    pit: {figure:'4.12', panel:'c', box:[12,640,713,480], alt:'A worker stands with a shovel beside a hand-dug pit holding low-flow water on the Jadukata fan.', place:'Laurergarh, Jadukata River', date:'January 2023'},
+    cutbars: {figure:'4.12', panel:'d', box:[772,640,713,480], alt:'Sand boats work the low-flow channel between mined bars on the Jadukata fan.', place:'Laurergarh, Jadukata River', date:'January 2023'},
+    machinery: {figure:'5.11', panel:'c', box:[731,67,667,633], alt:'Rusting gravel-sorting machinery stands on the floodplain beside the recovered Lubha channel.', place:'Lubhachorra, Lubha River', date:'January 2023'}
+  },
+  stops: [
+    {id:'source', label:'At the water’s edge', title:'Why dig here?', photo:'loading', figure:'2.1', chapter:2, question:'where', evidence:'setting',
+     prompt:'At Lalakhal, workers can shovel sand straight into boats. What brings so much material within reach here?', choices:['Rivers carry it down from the hills.','It forms only where boats can land.'], best:0,
+     finding:'The rivers carry sediment off the Shillong Plateau. As they leave the steep hills and spread across the plain, sand and gravel accumulate on fans and bars. The boats show how accessible those deposits can be.',
+     cue:'Trace a river south from the hills to the plain on the study map.', bridge:'One boat is easy to see. How could you tell whether extraction was spreading across a whole region?'},
+    {id:'footprint', label:'From boats to satellites', title:'Can a satellite see a shovel?', photo:'fan', figure:'4.6', chapter:4, question:'growth', evidence:'extent',
+     prompt:'In January, water collects in pits on exposed bars. Across decades of low-flow images, what can those marks tell us?', choices:['The weight of every load taken out.','How much ground shows persistent change.'], best:1,
+     finding:'Across 79 sites with an extraction signal, the visible footprint grew from about 260 hectares in 2000 to about 1,000 in 2023. Small workings can escape detection. Area gives a lower bound on visible disturbance; it cannot tell us the tonnage removed.',
+     cue:'Start with panel (a): the colored bands add up to the conservative regional footprint.', bridge:'A satellite sees the surface. To find what changed underneath, the thesis turns to repeated surveys of the riverbed.'},
+    {id:'bed', label:'Beneath the surface', title:'Can the same flow run lower?', photo:'dredgers', figure:'6.6', chapter:6, question:'effects', evidence:'stage', model:'incision',
+     prompt:'Imagine the same amount of water passing a gauge each second. If the channel deepens, must the water still reach the same mark?', choices:['Yes, the same flow needs the same level.','No, the shape of the channel matters.'], best:1,
+     finding:'On the Someshwari, the water surface was about 2.2 m lower at the same low discharge. Near the downstream gauge, the deepest point of one surveyed section fell about 10 m from 2010 to 2024. Other sections changed less; the upstream section became shallower.',
+     cue:'Compare panel (c), beside the downstream gauge, with panel (a), upstream. Then follow both sections through time in (e).', bridge:'If excavation can reshape a channel, does stopping the work let the whole landscape recover?'},
+    {id:'recovery', label:'After the ban', title:'Which pits fill back in?', photo:'pools', figure:'5.10', chapter:5, question:'recovery', evidence:'recovery', model:'infill',
+     prompt:'After enforcement began in 2021 on the Lubha, which pits would you expect the next seasons of flowing water to refill more readily?', choices:['Pits in the active channel.','Pits out on the floodplain.'], best:0,
+     finding:'By 2024, sediment had refilled 94.5% of the mapped peak pit area in the active channel, compared with at least 23% in abandoned channels and on the floodplain. Each percentage refers to its own area. A recovering river channel can sit beside a still-pitted floodplain.',
+     cue:'Compare the same active channel in January 2019 and March 2024: rows of pits give way to gravel dunes.', bridge:'The Lubha refilled faster than jobs returned: 95% of the 55 residents interviewed reported hardship and unemployment. On the Someshwari, who earned what from a truckload of sand?'},
+    {id:'earnings', label:'A truckload of sand', title:'Who keeps the buyer’s money?', photo:'cargo', figure:'8.4', chapter:8, question:'benefits', evidence:'revenue',
+     prompt:'On the Someshwari, a leaseholder divided a buyer’s payment of 100 taka among the people and costs behind a truckload. Who received the larger share?', choices:['The laborers who loaded the sand.','The leaseholder and machine owner together.'], best:1,
+     finding:'In this leaseholder’s account, 54 taka went to the leaseholder syndicate and machine owner together, and 11 to laborers at the landing. The exercise shows how one participant described the split. It is not a financial audit or an estimate for every river.',
+     cue:'Find the first two blocks of the bar, then compare their combined width with the blue block for laborers.', bridge:'When income and control are distributed this unevenly, what happens when someone asks for the mining to change?'},
+    {id:'voice', label:'Who can change the rules?', title:'What happens after a complaint?', photo:'towers', figure:'9.4', chapter:9, question:'persistence', evidence:'governance',
+     prompt:'In the Someshwari survey, 97 people had tried to complain. Did most say their complaint was addressed?', choices:['Yes, most received a response that addressed it.','No, most met pressure or no response.'], best:1,
+     finding:'Only 5 of the 97 said their complaint was addressed. Another 42 reported pressure and 50 reported no response. The thesis connects that experience to its recommendations: measure what each river can supply, plan for lost livelihoods, and give residents a complaint channel outside local protection networks.',
+     cue:'Follow the lower panel from recognition to enforcement. The numbers shrink at each step.', bridge:'Back at the Lubha, a photograph can show which pits remain. To judge recovery, we also need to ask who can earn a living and whose concerns will be heard.'}
+  ],
+  questionStops:{where:'source',growth:'footprint',effects:'bed',recovery:'recovery',benefits:'earnings',persistence:'voice',management:'voice',evidence:'footprint'},
+  chapterStops:['source','source','footprint','footprint','recovery','bed','bed','earnings','voice']
+};

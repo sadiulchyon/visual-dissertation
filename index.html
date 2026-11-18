@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#10302b">
+<meta name="description" content="A visual dissertation in nine chapters: what sand and gravel mining leaves behind on six rivers in northern Bangladesh. Research by Md Sadiul Alam Chyon.">
+<title>River Mining Explorer — A visual dissertation</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="field-atlas.css"><link rel="stylesheet" href="spine.css">
+<script defer src="figures.js"></script><script defer src="sources.js"></script><script defer src="content.js"></script><script defer src="questions.js"></script><script defer src="media.js"></script><script defer src="field-guide.js"></script><script defer src="spine.js"></script><script defer src="river-model.js"></script><script defer src="app.js"></script>
+</head>
+<body id="top">
+<a class="skip" href="#workspace">Skip to the dissertation</a>
+<header class="vd-header">
+<a href="#top" class="brand"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 3C34 12 5 19 23 27S30 34 21 38M18 2C44 11 15 18 33 26"/></svg><span>River Mining Explorer<small>A VISUAL DISSERTATION</small></span></a>
+<nav id="rail" class="vd-rail" aria-label="Chapters"></nav>
+<div class="vd-header-end"><button data-goto="figures" id="nav-figures" aria-pressed="false">Figures <small>81</small></button><button data-evidence="sources">About</button><button id="motion-toggle" class="vd-motion" aria-pressed="true" title="Turn explanatory motion off">Motion on</button></div>
+<div class="vd-progress" aria-hidden="true"><i id="progress-bar"></i></div>
+</header>
+<main id="workspace" tabindex="-1">
+<div id="spine"></div>
+<div id="library-wrap" class="app-layout gallery-layout" hidden><div class="workspace">
+<section id="figure-library" aria-labelledby="library-title">
+<div class="view-heading"><div><p class="eyebrow">THE ORIGINAL EVIDENCE</p><h1 id="library-title">Explore the figures</h1><p>Open a figure to zoom in and read its original caption.</p></div><a class="vd-chip" href="#top">← Back to the chapters</a></div>
+<div class="library-filters"><label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 6 6"/></svg><input id="figure-search" type="search" placeholder="Search a river, topic or figure number…" aria-label="Search figures"></label><select id="figure-chapter" aria-label="Filter figures by chapter"><option value="all">All chapters</option></select><button id="figure-clear" class="quiet-button">Clear</button></div>
+<div class="library-count"><span id="figure-count" aria-live="polite"></span><span>Original captions and credits retained</span></div><div id="figure-grid" class="figure-grid"></div><p id="figure-empty" class="figure-empty" hidden>No figures match. Try a river name or clear the filters.</p><div class="more-row"><button id="figure-more" class="outline-button">Show more figures ↓</button></div>
+</section>
+</div></div>
+</main>
+<footer class="vd-footer"><span>From Riverbed to Livelihood · A visual dissertation by Md Sadiul Alam Chyon</span><button data-evidence="sources">Research scope &amp; sources ↗</button></footer>
+<dialog id="evidence-dialog" class="evidence-dialog" aria-labelledby="evidence-title"><div class="dialog-header"><span>LOOK AT THE EVIDENCE</span><button class="icon-button" data-close="evidence-dialog" aria-label="Close evidence">✕</button></div><div id="evidence-body" class="evidence-body"></div></dialog>
+<dialog id="figure-dialog" class="figure-dialog" aria-labelledby="figure-dialog-title"><div class="figure-toolbar"><div><button id="figure-prev" class="icon-button" aria-label="Previous figure">←</button><button id="figure-next" class="icon-button" aria-label="Next figure">→</button><span id="figure-dialog-title"></span></div><div><button id="zoom-out" class="icon-button" aria-label="Zoom out">−</button><output id="zoom-label" aria-live="polite">Fit</output><button id="zoom-in" class="icon-button" aria-label="Zoom in">+</button><button id="zoom-fit" class="quiet-button">Fit</button><button class="icon-button" data-close="figure-dialog" aria-label="Close figure">✕</button></div></div><div class="figure-dialog-layout"><div id="figure-stage" class="figure-stage" tabindex="0" aria-label="Figure image; scroll or drag to pan when zoomed"><img id="figure-large" src="assets/favicon.svg" alt=""></div><aside class="figure-caption-panel"><div id="figure-part-tabs" class="part-tabs"></div><h2 id="figure-name"></h2><p id="figure-caption"></p><div id="figure-origin" class="figure-origin"></div><a id="figure-original" class="outline-button" target="_blank" rel="noopener">Open full-resolution file ↗</a><button id="figure-to-chapter" class="source-button">Go to this chapter ↗</button><p class="small-note">Zoom with + / −; scroll or drag to pan. Arrow keys move between figures. Esc closes the viewer.</p></aside></div></dialog>
+<noscript><p class="noscript">Please enable JavaScript to read the chapters and explore the figure library.</p></noscript>
+</body>
+</html>
